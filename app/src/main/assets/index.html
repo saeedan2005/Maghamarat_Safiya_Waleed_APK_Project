@@ -87,8 +87,8 @@ canvas{width:100%;height:100%;object-fit:fill;touch-action:none}
 @media (orientation: landscape){
   #play{position:relative;padding-inline:2px !important}
   .play-side-icons{
-    position:absolute;z-index:8;top:0;left:0;right:0;height:30px;
-    display:block;pointer-events:none
+    position:relative;z-index:8;top:auto;left:auto;right:auto;height:34px;
+    display:block;pointer-events:none;flex:0 0 34px
   }
   .play-side-icons .side-icon{
     position:absolute;top:2px;pointer-events:auto;
@@ -121,7 +121,7 @@ canvas{width:100%;height:100%;object-fit:fill;touch-action:none}
   .game{width:min(100%,calc((100dvh - 145px)*1.86))!important}
 }
 @media (orientation:landscape) and (max-height:420px){
-  .play-side-icons{height:26px}
+  .play-side-icons{height:28px;flex-basis:28px}
   .play-side-icons .side-icon{width:23px!important;height:23px!important;font-size:13px!important}
   .play-side-icons #sideExit{left:29px}
   #play .hud{padding-inline:31px!important}
